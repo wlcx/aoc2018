@@ -8,8 +8,8 @@ fn main() {
     for line in BufReader::new(f).lines() {
         let l = line.unwrap();
         if l != "" {
-        accumulator += i32::from_str(&l).unwrap();
+            accumulator += i32::from_str(&l).unwrap();
         }
     }
-    println!("Result: {}", accumulator);
+    println!("{}", accumulator);
 }
